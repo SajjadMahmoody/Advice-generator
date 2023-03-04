@@ -16,3 +16,4 @@ async function doFetch() {
 btn.addEventListener("click", () => {
   doFetch();
 });
+ doFetch()
