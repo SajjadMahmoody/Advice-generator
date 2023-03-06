@@ -1,4 +1,5 @@
 let btn = document.querySelector("#btn");
+let btnImg = document.querySelector("#btn img");
 let showmsg = document.querySelector("#show-msg");
 let showid = document.querySelector("#show-id");
 async function doFetch() {
@@ -13,7 +14,11 @@ async function doFetch() {
     console.error(error);
   }
 }
+let d = 0;
 btn.addEventListener("click", () => {
+  d = d + 1;
+  btnImg.style.cssText = `transform: rotate(${d * 180}deg)`;
   doFetch();
 });
- doFetch()
+
+doFetch()
