@@ -58,6 +58,7 @@ body {
   border-radius: 50%;
   background-color: hsl(150, 100%, 66%);
   cursor: pointer;
+  transition: 0.1s all ease-in;
 }
 
 .btn img {
@@ -69,8 +70,7 @@ body {
   transition: 0.5s all ease-in;
 }
 
-.btn:hover img {
-  transform: rotate(120deg);
+.btn:hover {
   box-shadow: 0 0 25px 0px hsl(150, 100%, 66%);
 }
 
